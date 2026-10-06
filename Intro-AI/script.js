@@ -1,4 +1,4 @@
-const button = document.querySelector('button');
+const changeBackgroundButton = document.getElementById('change-background-button');
 
 function randomLightColor() {
   const red = Math.floor(Math.random() * 76) + 180;
@@ -8,6 +8,7 @@ function randomLightColor() {
   return `rgb(${red}, ${green}, ${blue})`;
 }
 
-button.addEventListener('click', () => {
+changeBackgroundButton.addEventListener('click', () => {
   document.body.style.backgroundColor = randomLightColor();
 });
+git 

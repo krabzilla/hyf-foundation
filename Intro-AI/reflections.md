@@ -1,7 +1,7 @@
 ## 1. Three new things I learned from AI
 
-1. A custom font has to be loaded, not just named. Writing font-family "Inter" only works if the font is fetched from Google Fonts with a link or @importand it should have a fallback font.
-2. For randon color feature, Math.random() gives a decimal between 0 and 1, multiplying sets the range, Math.floor() rounds it down, and adding
+1. A custom font has to be loaded, not just named. Writing font-family "Inter" only works if the font is fetched from Google Fonts with a link or @import and it should have a fallback font.
+2. For random color feature, Math.random() gives a decimal between 0 and 1, multiplying sets the range, Math.floor() rounds it down, and adding
    a number shifts the range.
 3. For Mobile responsive design: the base CSS is written for phones, and a @media (min-width: 768px) block adjusts it for larger screens.
 
