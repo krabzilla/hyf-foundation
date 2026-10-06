@@ -11,4 +11,3 @@ function randomLightColor() {
 changeBackgroundButton.addEventListener('click', () => {
   document.body.style.backgroundColor = randomLightColor();
 });
-git 

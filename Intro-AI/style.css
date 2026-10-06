@@ -9,25 +9,65 @@ body {
   transition: background-color 0.4s ease;
 }
 
-main {
+.site-header,
+.main-content,
+.site-footer {
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-h1 {
+.site-header {
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.site-name {
+  margin: 0 0 1rem;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #1e3a5f;
+}
+
+.contact-link {
+  color: #1e3a5f;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
   margin: 0 0 1rem;
   text-align: center;
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 2.25rem;
 }
 
-ul {
+.section-text {
+  margin: 0 0 1rem;
+}
+
+.interest-list {
   margin: 1rem 0 0;
   padding-left: 1.25rem;
 }
 
-button {
+.interest-item {
+  margin-bottom: 0.25rem;
+}
+
+.background-button {
   display: block;
   width: 100%;
   margin-top: 1.5rem;
@@ -43,20 +83,35 @@ button {
     transform 0.2s ease;
 }
 
-button:hover {
+.background-button:hover {
   background-color: #16304d;
 }
 
+.site-footer {
+  padding-top: 0;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+}
+.section-title--small {
+  font-size: 1.75rem;
+}
+
 @media (min-width: 768px) {
-  main {
+  .main-content {
     padding: 4rem 1.5rem;
   }
 
-  h1 {
+  .section-title {
     font-size: 3rem;
   }
 
-  button {
+  .background-button {
     width: auto;
+  }
+  .section-title--small {
+    font-size: 2.25rem;
   }
 }
