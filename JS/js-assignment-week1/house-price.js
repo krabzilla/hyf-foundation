@@ -1,8 +1,8 @@
-const peterVolume = 8 * 10 * 10;
-const peterGarden = 100;
+const peterHousevolume = 8 * 10 * 10;
+const peterGardenSize = 100;
 
 const peterCalculatedPrice =
-  peterVolume * 2.5 * 1000 + peterGarden * 300;
+  peterHousevolume * 2.5 * 1000 + peterGarden * 300;
 
 const peterActualPrice = 2500000;
 
@@ -14,11 +14,11 @@ if (peterActualPrice > peterCalculatedPrice) {
   console.log("Peter is paying too little.");
 }
 
-const juliaVolume = 5 * 11 * 8;
-const juliaGarden = 70;
+const juliaHousevolume = 5 * 11 * 8;
+const juliaGardenSize = 70;
 
 const juliaCalculatedPrice =
-  juliaVolume * 2.5 * 1000 + juliaGarden * 300;
+  juliaHousevolume * 2.5 * 1000 + juliaGarden * 300;
 
 const juliaActualPrice = 1000000;
 
