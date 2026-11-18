@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      margin-top: 20vh;
+      color: #333;
+    }
+
+    #count {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    fetch("user-count")
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("count").textContent = data.count;
+      });
+  </script>
+  <body>
+    <h1>Total users</h1>
+    <p id="count">Loading...</p>
+    <h1>My App</h1>
+    <p id="count">Loading...</p>
+  </body>
+</html>
